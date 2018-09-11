@@ -13,28 +13,32 @@
 </head>
 
 <body>
-    <script src="dom.js"></script>
-    <script src="app.js"></script>
-        <aside>
-                <nav>
-                    <ul class nav>
-                        <li>Print</li>
-                        <li>Verify</li>
-                        <li>Lookup</li>
-                        <li>Contains</li>
-                        <li>Update</li>
-                        <li>Add</li>
-                        <li>Delete</li>
-                    </ul>
-                </nav>
-            </aside>
+
+    <aside>
+        <nav>
+            <ul class nav>
+                <li id="print">Print</li>
+                <li id="verify">Verify</li>
+                <li id="lookup">Lookup</li>
+                <li id="contains">Contains</li>
+                <li id="update">Update</li>
+                <li id="add">Add</li>
+                <li id="delete">Delete</li>
+            </ul>
+        </nav>
+    </aside>
     <header>
         <h2>Employee Manager</h2>
     </header>
+    <form>
+        <input id="userInput" class="show" />
+        <button id="submit">Search</button>
+    </form>
+    <div id="list"></div>
 
-   
-   
 
+    <script src="dom.js"></script>
+    <script src="app.js"></script>
 </body>
 
 </html>
@@ -44,7 +48,7 @@
 
 
 
- <!-- <div class="container">
+<!-- <div class="container">
         <form>
             <input type="text" id="search-input" placeholder="job title" autocomplete="off" />
             <button id="search">Search</button>

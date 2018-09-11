@@ -13,6 +13,18 @@ const $ = function (sel) {
       }
     }
   
+    const addClass = function (className) {
+      for (let i = 0; i < nodeList.length; i++) {
+        nodeList[i].classList.add(className);
+      }
+    }
+
+    const removeClass = function (className) {
+      for (let i = 0; i < nodeList.length; i++) {
+        nodeList[i].classList.remove(className);
+      }
+    }
+
     const on = function (action, cb) {
       for (let i = 0; i < nodeList.length; i++) {
         nodeList[i].addEventListener(action, cb);
@@ -52,6 +64,8 @@ const $ = function (sel) {
     const publicAPI = {
       text: text,
       toggleClass: toggleClass,
+      addClass: addClass,
+      removeClass: removeClass,
       on: on,
       val: val,
       html: html,

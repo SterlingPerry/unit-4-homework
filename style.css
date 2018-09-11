@@ -6,7 +6,12 @@ header {
     padding: 25px;
 
     }
-
+input {
+    display: none;
+}
+.show {
+    display: block;
+}
 body{
     font-family: 'Montserrat', sans-serif;
 
